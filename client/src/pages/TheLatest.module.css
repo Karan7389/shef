@@ -1,0 +1,254 @@
+.latestPage {
+  width: 100%;
+  background-color: #ffffff;
+  color: #000000;
+  min-height: 100vh;
+}
+
+/* Horizontal Scroll Setup */
+.scrollSection {
+  position: relative;
+  background-color: #ffffff;
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 15vh;
+  height: 83vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.horizontalTrack {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  align-items: center;
+}
+
+.slideBlock {
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.image1FeatureSection {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px; 
+  background-color: #ffffff;
+}
+
+.image1Grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Reduced from 32px */
+}
+
+@media (min-width: 1024px) {
+  .image1Grid {
+    flex-direction: row;
+    gap: 20px; /* Reduced from 32px */
+  }
+}
+
+.image1SideCol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Reduced from 40px */
+}
+
+.image1MidCol {
+  flex: 1.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.inverseTitle {
+  color: #000000 !important;
+  font-family: var(--font-primary);
+  font-size: 3rem;
+  letter-spacing: -1px;
+}
+
+.inverseTitle :global(.title), 
+.inverseTitle :global(.subtitle) {
+  color: #000000 !important;
+}
+
+.articleGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.newsletterWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-xl) 0;
+}
+
+.newsTitle {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-h3);
+  color: var(--text-secondary);
+  letter-spacing: var(--tracking-normal);
+}
+
+.newsDesc {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-base);
+  color: #555555;
+  max-width: 500px;
+  line-height: var(--line-height-relaxed);
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 400px;
+  margin-top: var(--spacing-md);
+}
+
+.newsForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+@media (min-width: 500px) {
+  .newsForm {
+    flex-direction: row;
+    border-bottom: 1px solid #000000;
+    padding-bottom: var(--spacing-xs);
+    gap: 0;
+  }
+}
+
+.newsInput {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #E0E0E0;
+  padding: var(--spacing-sm) 0;
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  outline: none;
+}
+
+@media (min-width: 500px) {
+  .newsInput {
+    border-bottom: none;
+  }
+}
+
+.newsInput::placeholder {
+  color: #555555;
+  opacity: 0.5;
+}
+
+.newsSubmit {
+  background: transparent;
+  border: none;
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: var(--spacing-sm) 0;
+  transition: opacity var(--transition-fast) ease;
+  align-self: flex-start;
+}
+
+@media (min-width: 500px) {
+  .newsSubmit {
+    align-self: center;
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+.newsSubmit:hover {
+  opacity: 0.6;
+}
+
+.highlightsWrapper {
+  margin-top: var(--spacing-xxl);
+  padding-top: var(--spacing-xl);
+  border-top: 1px solid #E0E0E0;
+  width: 100%;
+}
+
+.highlightsTitle {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-widest);
+  color: #555555;
+  margin-bottom: var(--spacing-lg);
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+}
+
+.topic {
+  font-family: var(--font-secondary);
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border: 1px solid #E0E0E0;
+}
+
+/* Mobile Responsiveness for Latest Page */
+@media (max-width: 1023px) {
+  .scrollSection {
+    height: auto !important;
+  }
+
+  .horizontalTrack {
+    flex-direction: column !important;
+    width: 100% !important;
+    align-items: stretch !important;
+    transform: none !important;
+  }
+  
+  .stickyContainer {
+    position: static !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+  
+  .slideBlock {
+    width: 100% !important;
+    padding: 0 20px !important;
+    height: auto !important;
+    margin-bottom: 60px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .inverseTitle {
+    font-size: 2.5rem !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+    padding-top: 40px !important;
+  }
+  
+  .image1FeatureSection {
+    padding: 0 !important;
+  }
+  
+  .newsletterWrapper {
+    padding: 40px 0 !important;
+  }
+}

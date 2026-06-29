@@ -1,0 +1,175 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: var(--surface-primary);
+  /* Remove blur and border for maximum minimalism like Zara */
+  border-bottom: none;
+  transition:
+    background-color var(--transition-slow) var(--ease-luxury),
+    padding var(--transition-slow) var(--ease-luxury);
+  padding: var(--spacing-lg) 0;
+}
+
+.scrolled {
+  padding: var(--spacing-sm) 0;
+  background-color: var(--surface-primary);
+}
+
+.transparent {
+  background-color: transparent;
+  padding: var(--spacing-lg) 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/* --- Zara Style Menu Toggle --- */
+.menuToggle {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Increased gap for 2 lines */
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  background: transparent;
+}
+
+.hamburgerLine {
+  width: 24px;
+  height: 1px;
+  background-color: var(--brand-black);
+  transition: background-color var(--transition-normal) var(--ease-luxury);
+}
+
+.transparentLine {
+  background-color: var(--brand-white);
+}
+
+/* --- Zara Style Search --- */
+.navRight {
+  display: flex;
+  align-items: center;
+}
+
+.searchBtn {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--brand-black);
+  color: var(--brand-black);
+  font-family: var(--font-secondary);
+  font-size: 11px;
+  letter-spacing: 1px;
+  padding: 0 0 4px 0;
+  width: 80px;
+  text-align: left;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.transparentSearch {
+  border-bottom-color: var(--brand-white);
+  color: var(--brand-white);
+}
+
+.searchBtn:hover {
+  opacity: 0.6;
+}
+
+/* --- Zara Style Right Sidebar Actions --- */
+.zaraSidebar {
+  position: fixed;
+  top: 150px; /* Aligned roughly below the header area */
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+  z-index: 50;
+}
+
+.zaraSidebarLink {
+  background: transparent;
+  border: none;
+  color: var(--brand-black);
+  font-family: var(--font-secondary);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.bagCount {
+  font-weight: 400;
+  margin-left: 2px;
+}
+
+.transparentSidebar .zaraSidebarLink {
+  color: var(--brand-white);
+}
+
+.zaraSidebarLink:hover {
+  opacity: 0.6;
+}
+
+@media (min-width: 768px) {
+  .zaraSidebar {
+    right: 48px;
+    top: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+  padding: 10px 10px;
+}
+}
+/* --- Search Dropdown --- */
+.searchContainer {
+  position: relative;
+}
+
+.searchDropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 250px;
+  background-color: var(--surface-primary);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 60;
+  margin-top: 10px;
+}
+
+.searchDropdownLink {
+  padding: 10px 20px;
+  font-family: var(--font-secondary);
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--brand-black);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.searchDropdownLink:hover {
+  background-color: var(--surface-secondary);
+}
+
+
+.icon {
+  margin-left: 6px;
+  vertical-align: text-bottom;
+}
+

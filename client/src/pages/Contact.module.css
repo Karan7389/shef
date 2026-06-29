@@ -1,0 +1,171 @@
+.contactPage {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #fff;
+  color: #000;
+  min-height: 100vh;
+}
+
+.layoutGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 900px) {
+  .layoutGrid {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 100px;
+  }
+}
+
+/* Left Column - Form */
+.formColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainTitle {
+  font-family: var(--font-primary, sans-serif);
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #000;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.inputRow {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .inputRow {
+    flex-direction: column;
+  }
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-family: var(--font-secondary, sans-serif);
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  background-color: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.input::placeholder,
+.textarea::placeholder {
+  color: #666;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #000;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.checkboxGroup {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.checkbox {
+  margin-top: 4px;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.checkboxLabel {
+  font-family: var(--font-secondary, sans-serif);
+  font-size: 13px;
+  color: #555;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.submitBtn {
+  margin-top: 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 14px 28px;
+  font-family: var(--font-secondary, sans-serif);
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  width: fit-content;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease;
+}
+
+.submitBtn:hover {
+  background-color: #333;
+}
+
+/* Right Column - Info */
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 5px; /* align with the top of the form title loosely */
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoTitle {
+  font-family: var(--font-primary, sans-serif);
+  font-size: 16px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.infoText {
+  font-family: var(--font-secondary, sans-serif);
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.iconLink {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.iconLink:hover {
+  opacity: 0.6;
+}

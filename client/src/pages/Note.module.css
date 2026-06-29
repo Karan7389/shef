@@ -1,0 +1,114 @@
+.notePage {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  background-color: #F6F5F0;
+}
+
+.noteContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.narrowContainer {
+  width: 100%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 34px;
+  padding-top: 32px;
+}
+
+.leftContent {
+  width: 100%;
+  max-width: 100%;
+}
+
+.mainQuote {
+  font-family: var(--font-primary);
+  font-size: 46px;
+  line-height: 1.2;
+  color: var(--text-black);
+  font-weight: 400;
+  margin-bottom: 64px;
+  letter-spacing: -0.5px;
+  max-width: 650px;
+}
+
+.personBlock {
+  margin-bottom: 30px;
+  max-width: 650px;
+}
+
+.bioText {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-black);
+  margin-bottom: 24px;
+}
+.personBlock2 {
+  margin-bottom: 34px auto;
+  max-width: 100%;
+}
+.bioText2 {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-black);
+  text-align: center;
+  max-width: 950px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  
+}
+
+.signatureInfo {
+  margin-top: 24px;
+}
+
+.personName {
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  color: var(--text-black);
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.personTitle {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--text-black);
+  font-weight: 500;
+  margin: 0;
+}
+
+.companySection {
+  padding: 0px 0;
+  padding-bottom: 64px;
+}
+
+.companyText {
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text-black);
+  text-align: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+ .logo{
+    height: 80px;
+    
+ }
+ .logo img{
+  height: 100%;
+ }
